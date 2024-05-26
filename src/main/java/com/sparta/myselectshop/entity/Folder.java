@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.net.SocketOption;
+
 @Entity
 @Getter
 @Setter
@@ -27,4 +29,5 @@ public class Folder {
         this.name = name;
         this.user = user;
     }
+
 }

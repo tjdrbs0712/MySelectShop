@@ -10,8 +10,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api")
@@ -31,7 +29,7 @@ public class ProductController {
         return productService.updateProduct(id, requestDto);
     }
 
-    //관심 상품 조회
+    //관심 상품 조회 + 정렬
     @GetMapping("/products")
     public Page<ProductResponseDto> getProducts(
             @RequestParam("page") int page,

@@ -7,7 +7,7 @@
 //import com.sparta.myselectshop.naver.service.NaverApiService;
 //import com.sparta.myselectshop.repository.ProductRepository;
 //import com.sparta.myselectshop.repository.UserRepository;
-////import com.sparta.myselectshop.service.UserService;
+////import com.sparta.myselectshop.Service.UserService;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.ApplicationArguments;
 //import org.springframework.boot.ApplicationRunner;
@@ -17,7 +17,7 @@
 //import java.util.ArrayList;
 //import java.util.List;
 //
-////import static com.sparta.myselectshop.service.ProductService.MIN_MY_PRICE;
+////import static com.sparta.myselectshop.Service.ProductService.MIN_MY_PRICE;
 //
 //@Component
 //public class TestDataRunner implements ApplicationRunner {

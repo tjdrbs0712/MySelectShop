@@ -16,9 +16,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Service
 @RequiredArgsConstructor
 public class ProductService {
@@ -49,6 +46,7 @@ public class ProductService {
     }
 
     //정렬 + 관심 상품 조회
+    @Transactional(readOnly = true)
     public Page<ProductResponseDto> getProducts(User user, int page, int size, String sortBy, boolean isAsc) {
         Sort.Direction direction = isAsc ? Sort.Direction.ASC : Sort.Direction.DESC;
         Sort sort = Sort.by(direction, sortBy);
@@ -64,7 +62,7 @@ public class ProductService {
             productList = productRepository.findAll(pageable);
         }
 
-
+        //Product -> ProductResponseDto
         return productList.map(ProductResponseDto::new);
     }
 
