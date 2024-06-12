@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.Service;
+package com.sparta.myselectshop.service;
 
 import com.sparta.myselectshop.dto.ProductMypriceRequestDto;
 import com.sparta.myselectshop.dto.ProductRequestDto;
@@ -28,6 +28,7 @@ public class ProductService {
 
     public static final int MIN_MY_PRICE = 100;
 
+    //관심 상품 등록
     public ProductResponseDto createProduct(ProductRequestDto requestDto, User user) {
         Product product = productRepository.save(new Product(requestDto, user));
         return new ProductResponseDto(product);

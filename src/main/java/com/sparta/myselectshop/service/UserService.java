@@ -1,4 +1,4 @@
-package com.sparta.myselectshop.Service;
+package com.sparta.myselectshop.service;
 
 import com.sparta.myselectshop.dto.SignupRequestDto;
 import com.sparta.myselectshop.entity.User;

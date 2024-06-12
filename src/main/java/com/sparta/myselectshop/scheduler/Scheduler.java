@@ -4,7 +4,7 @@ import com.sparta.myselectshop.entity.Product;
 import com.sparta.myselectshop.naver.dto.ItemDto;
 import com.sparta.myselectshop.naver.service.NaverApiService;
 import com.sparta.myselectshop.repository.ProductRepository;
-import com.sparta.myselectshop.Service.ProductService;
+import com.sparta.myselectshop.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
